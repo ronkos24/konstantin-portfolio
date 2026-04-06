@@ -5,59 +5,50 @@ import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
 
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
 const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
     <div class="text-xl py-1">Hey there 👋</div>
-    <div class="text-5xl font-bold">I'm Manuel Ernesto</div>
-    <div class="text-3xl py-3 font-bold">Software Engineer and Entrepreneur</div>
-    <div class="py-2">
-      <text class="text-lg">
-        This is <b>Astrofy</b> a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS.
-        Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed. I hope you find
-        it useful!
-      </text>
+    <div class="text-5xl font-bold">Konstantin Ronenko</div>
+    <div class="text-3xl py-3 font-bold">Technical Support Specialist Level 2 — Payments</div>
+    
+    <div class="py-4 text-lg leading-relaxed max-w-2xl">
+      I provide advanced technical support for payment integrations and merchant platforms.
+      Experienced in troubleshooting escalated tickets, diagnosing API/webhook issues,
+      resolving checkout problems, and helping merchants successfully integrate with payment gateways.
     </div>
-    <div class="mt-8">
-      <a class="btn" href="https://twitter.com/manuelernestog" target="_blank"> Let's connect!</a>
-      <a href="https://github.com/manuelernestog/astrofy" target="_blank" class="btn btn-outline ml-5">
-        Get This template
-      </a>
+
+    <div class="mt-8 flex gap-4">
+      <a href="/cv" class="btn btn-primary">View Full CV</a>
+      <a href="/projects" class="btn btn-outline">View My Projects</a>
     </div>
   </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-3xl w-full font-bold mb-5">Featured Technical Cases</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="L2 Payment Gateway Support"
+    img="/My_photo_AI.jpg"
+    desc="Handled escalated tickets involving failed transactions, webhook failures, and API integration issues with Stripe and other PSPs."
+    url="/projects"
+    badge="L2 Support"
   />
   <div class="divider my-0"></div>
+
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    title="Advanced Checkout Troubleshooting"
+    img="/My_photo_AI.jpg"
+    desc="Diagnosed and resolved complex checkout problems including 3DS declines, tokenization issues, and high decline rates for merchants."
+    url="/projects"
+    badge="Payments"
   />
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+  <div class="mt-16">
+    <div class="text-3xl w-full font-bold mb-5">Latest from Blog</div>
   </div>
 
   {

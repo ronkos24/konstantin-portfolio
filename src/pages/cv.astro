@@ -8,11 +8,51 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
     <div class="text-3xl w-full font-bold">Profile</div>
   </div>
 
-  <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  <div class="mb-10 text-justify leading-relaxed">
+    Technical Support Specialist L2 with strong Linux and infrastructure background.
+    Experienced in enterprise monitoring (Zabbix), incident management, root cause analysis,
+    and automation of support processes. Proven ability to handle escalated technical tickets
+    under pressure, investigate complex issues, and improve operational efficiency.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Professional Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="System Administrator (Monitoring & Infrastructure)"
+      subtitle="Kyndryl (IBM) | Wroclaw, Poland | June 2022 – Present"
+    >
+      Led monitoring platform migration from DataDog, Nagios, Netcool and ScienceLogic to Zabbix.
+      Optimized alerting logic and thresholds. Handled escalated incidents in ServiceNOW (ITIL).
+      Developed Python and Bash scripts for log analysis and automation, significantly reducing manual work.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Platoon Leader - Chief of Radio Relay Station"
+      subtitle="Armed Forces of Ukraine | October 2019 – April 2021"
+    >
+      Led mission-critical communications operations in high-pressure environment.
+      Ensured reliable infrastructure and secure connectivity under stress.
+      Managed team coordination and operational risk assessment.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="LMS System Administrator & Digital Learning Manager"
+      subtitle="Hedgehog (USA company) | Ukraine | September 2021 – December 2021"
+    >
+      Maintained 99% platform uptime. Handled technical troubleshooting and system administration
+      for internal users and learning platform.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="System Administrator"
+      subtitle="Poltava District Clinic Center | Ukraine | July 2019 – May 2021"
+    >
+      Administered Linux and Windows infrastructure, managed backups, network configuration
+      and resolved daily technical issues for users.
+    </TimeLineElement>
   </div>
 
   <div class="mb-5">
@@ -21,72 +61,43 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Master's in International Marketing and Management"
+      subtitle="University of Management and Economics ISM (BI Norwegian Business School) | 2013 – 2017"
     />
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Master's in Economical Cybernetics"
+      subtitle="National University 'Yuri Kondratyuk Poltava Polytechnic' | 2007 – 2012"
     />
   </div>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
+    <div class="text-3xl w-full font-bold">Key Skills</div>
   </div>
 
-  <div class="time-line-container mb-10">
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-  </div>
+  <ul class="list-disc md:columns-3 columns-2 mx-6 mb-10">
+    <li>Zabbix Administration & Alert Optimization</li>
+    <li>Linux Systems Administration (RHEL / Ubuntu)</li>
+    <li>Incident Management & Root Cause Analysis</li>
+    <li>ServiceNOW & ITIL Processes</li>
+    <li>Python & Bash Scripting</li>
+    <li>Log Analysis & Troubleshooting</li>
+    <li>Monitoring Platform Migration</li>
+    <li>High-Pressure Environment Operations</li>
+    <li>API & Webhook Basic Troubleshooting</li>
+    <li>Automation of Support Tasks</li>
+    <li>English (B2)</li>
+  </ul>
 
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Certifications</div>
   </div>
 
   <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-  </ul>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
-
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+    <li>Red Hat Certified System Administrator (RHCSA EX200)</li>
+    <li>Microsoft Azure Administrator (AZ-104)</li>
+    <li>ITIL 4: Introduction to Service Management</li>
+    <li>Cisco CCNA</li>
+    <li>Microsoft Azure Fundamentals (AZ-900)</li>
+    <li>LPI Linux Essentials</li>
   </ul>
 </BaseLayout>
