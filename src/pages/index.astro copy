@@ -20,23 +20,9 @@ const last_posts = posts.slice(0, 3);
       resolving checkout problems, and helping merchants successfully integrate with payment gateways.
     </div>
 
-    <!-- 🔥 NEW CTA BLOCK -->
-    <div class="py-2 text-sm opacity-70">
-      🚀 Start earning on Upwork with my course
-    </div>
-
-    <div class="mt-4 flex gap-4 flex-wrap">
+    <div class="mt-8 flex gap-4">
       <a href="/cv" class="btn btn-primary">View Full CV</a>
       <a href="/projects" class="btn btn-outline">View My Projects</a>
-
-      <!-- 💰 PAYMENT BUTTON -->
-      <a
-        href="https://buy.stripe.com/5kQbJ13gSfj2dVI2jG2Fa00"
-        target="_blank"
-        class="btn btn-secondary"
-      >
-        Buy Course — 3 PLN
-      </a>
     </div>
   </div>
 
